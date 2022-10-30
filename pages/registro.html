@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-mercado-liebre.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MercadoLiebre - Tus datos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html"><img src="../img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></a>
+            <a href="#"><i class="fas fa-question-circle"></i></a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <i class="fas fa-id-badge"></i>
+            <h3> Para crear tu cuenta necesitamos tus datos</h3>
+            <form class="formulario-registro" action="/" method="GET">   
+                <p>
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+                </p>
+                <p>
+                    <label for="nombreUsuario">Nombre de usuari@:</label>
+                    <br>
+                    <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de Usuari@" minlength="4" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="correo@email.com" required>
+                </p>
+                <p>
+                    <label for="domicilio">Domicilio:</label>
+                    <br>
+                    <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                </p>
+                <p>
+                    <label>Fecha de nacimiento:</label>
+                    <br>
+                    <input type="date" name="fecha" value="aaaa-mm-dd" min="1900-01-01" max="2022-12-31">
+                </p>
+                <p>
+                    <label>Perfil del usuari@:
+                        <br>
+                        <label class="opciones">
+                            <input type="radio" name="perfil" value="Comprar">
+                            Comprar 
+                        </label>
+                        <label class="opciones">
+                            <input type="radio" name="perfil" value="Vender">
+                            Vender
+                        </label>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Intereses:
+                        <br>
+                        <label class="opciones">
+                        <input type="checkbox" name="intereses" value="Electrodomesticos">
+                            Electrodomésticos
+                        </label>
+                        <label class="opciones">
+                            <input type="checkbox" name="intereses" value="Moda">
+                            Moda
+                        </label>
+                        <label class="opciones">
+                            <input type="checkbox" name="intereses" value="Hogar y Muebles">
+                            Hogar y Muebles
+                        </label>
+                        <label class="opciones">
+                            <input type="checkbox" name="intereses" value="Tecnología">
+                            Tecnología
+                        </label class="opciones">
+                        <label class="opciones">
+                            <input type="checkbox" name="intereses" value="Belleza y Cuidado Personal">
+                            Belleza y Cuidado Personal
+                        </label>
+                    </label>
+                </p>
+                <p>
+                    <label>Imagen del perfil de usuari@:</label>
+                    <br>
+                    <input type="file" name="fotoUsuario" accept=".jpg">
+                </p>
+                <p>
+                    <label for="contraseña">Contraseña:</label>
+                    <br>
+                    <input type="password" name="password" id="contraseña"placeholder="Contraseña" minlength="8" required>
+                </p>
+                <p>
+                    <label for="confirmacionContraseña">Confirmar contraseña:</label>
+                    <br>
+                    <input type="password" name="password" for="confirmacionContraseña" placeholder="Confirmar contraseña"minlength="8" required>
+                </p> 
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>   
+                </div>
+            </form>
+        </div>  
+    </main>
+    <footer>
+        <p>Copyright © 1999-2022 MercadoLibre S.R.L.</p>
+        <p>CABA, Argentina</p>
+    </footer>  
+</body>
+</html>
