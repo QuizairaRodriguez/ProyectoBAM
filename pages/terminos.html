@@ -6,31 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo-mercado-liebre.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/terminos.css">
     <title>MercadoLiebre</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="headerSuperior">
             <a href="../index.html"><img src="../img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></a>
-            <a href="#"><i class="fas fa-question-circle"></i></a>
+            <a  class="ayuda" href="#"><i class="fas fa-question-circle"></i></a>
         </div>
     </header>
     <main>
-        <div>
+        <div class="contenedor_terminos">
             <img src="../img/img-register.png" alt="Imagen de un formulario">
             <h2>Para crear tu cuenta necesitamos validar tus datos</h2>
-            <p>Solo te tomará unos minutos.</p>
+            <p>Solo te tomará unos minutos</p>
             <form action="registro.html" method="">
                 <label for="">
                     <input type="checkbox" name="términos" required>
-                    Autorizo el uso de mis datos de acuerdo a la Declaración de Privacidad y acepto los <a href="#">Términos y condiciones</a>.
+                    Autorizo el uso de mis datos de acuerdo a la Declaración de Privacidad y acepto los <a href="#">términos y condiciones</a>.
                 </label>
-                <button type="submit">Enviar</button>
+                <button type="submit">Continuar</button>
             </form>
         </div>
+    </main>
     <footer>
-        <p>Copyright © 1999-2022 MercadoLibre S.R.L.</p>
-        <p>CABA, Argentina</p>
+        <ul class="links_footer">
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Defensa del consumidor</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <p class="derechos">Copyright © 1999-2022 MercadoLibre S.R.L.</p>
+        <p class="derechos">CABA, Argentina</p>
     </footer>    
 </body>
 </html>

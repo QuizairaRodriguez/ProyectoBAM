@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+header {
+    background-color: rgb(255, 241, 89);
+}
+
+.headerSuperior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 50px 0 50px;
+}
+
+.headerSuperior a {
+    display: inline-block;
+    width: 200px;
+}
+
+.barraBusqueda {
+    width: 500px;
+    background-color: white;
+    height: 40px;
+    box-shadow: 0 2px 0 rgba(100,100,100, 0.2);
+}
+
+.barraBusqueda input {
+    border: none;
+    outline: none;
+    width: 450px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.barraBusqueda button {
+    border: none;
+    height: 30px;
+    width: 40px;
+    background-color: transparent;
+    color: #666666;
+    cursor: pointer;
+    border-left: 1px solid #e6e6e6;
+}
+
+.barraBusqueda button i {
+    font-size: 16px;
+}
+
+.headerSuperior p {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.headerInferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 50px;
+}
+
+.headerInferior .envios {
+    border: none;
+    height: 30px;
+    width: 120px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.headerInferior .envios:hover {
+    border-radius: 5px;
+    border: 1px solid #666666;
+    opacity: 0.6;
+}
+
+.headerInferior .envios i {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.headerInferior .envios a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.headerInferior .envios a:hover {
+    opacity: 1;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 5px;
+    position: relative;
+    line-height: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    opacity: 0.6;
+    height: 30px;
+    display: inline-block;
+}
+
+.menu ul li a:hover {
+    opacity: 1;
+}
+
+.menu .submenu {
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: #666666;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.menu .submenu li {
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .submenu li a {
+    padding: 0 20px;
+    color: white;
+    opacity: 1;
+}
+
+.menu .categorias:hover .submenu{
+    display: block;
+}
+
+.menu .submenu li:hover {
+    background-color: #3483fa;
+}
+
+.menu_izquierda {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*MAIN*/
+main {
+    background-color: #eeeaee;
+}
+
+/*BANNER*/
+.banner img {
+    width: 100%;
+}
+
+/*MEDIOS DE PAGO*/
+.mediosPago {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 900px;
+    height: 50px;
+    margin: 50px auto;
+
+}
+
+.medio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+
+.medio a{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+.medio a i {
+    color: #3483fa;
+    font-size: 18px;
+}
+
+.medio div{
+    width: 150px;
+}
+
+.medio div h3{
+    font-size: 14px;
+}
+
+.medio div a{
+    font-size: 10px;
+    text-decoration: none;
+    color: #3483fa;
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+/*TITULO*/
+.titulo {
+    color: #666666;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 0 20px 0;
+}
+
+/*OFERTAS*/
+.ofertas {
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+.ofertas .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articulos article {
+    width: 220px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.articulos article:hover {
+    box-shadow: 0 5px 10px rgba(100,100,100, 0.7);
+}
+
+.articulos article:hover .descripcion{
+    display: block;
+}
+
+.articulos article img {
+    width: 220px;
+}
+
+.contenidoArticulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenidoArticulo .precio {
+    font-size: 25px;
+    width: 150px;
+    width: 30%;
+    color: #666666;
+}
+
+.contenidoArticulo .descripcion {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 300;
+    display:none;
+}
+
+.contenidoArticulo:hover .descripcion{
+    display: block;
+}
+
+/*VERDE*/
+.verde {
+    color: #39b54a;
+    font-size: 16px;
+    width: 70px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.contenidoArticulo .envio {
+    width: 100px;
+    text-align: left;
+}
+
+/*DESCUBRIR*/
+.descubrir {
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+.descubrir .contenedor_elementos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descubrir .elemento {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 450px;
+    padding: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.descubrir .elemento:hover {
+    box-shadow: 0 5px 10px rgba(100,100,100, 0.7);
+}
+
+.descubrir .elemento img {
+    width: 200px;
+    height: 150px;
+}
+
+.elemento div {
+    width: 200px;
+}
+
+.elemento div p {
+    color:#666666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.elemento div h3 {
+    font-size: 16px;
+}
+
+.elemento div button {
+    border: none;
+    width: 80px;
+    height: 30px;
+    background-color: #3483fa;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*CATEGORIAS*/
+.categorias {
+    margin: 50px 0;
+    padding: 0 50px 50px 50px;
+}
+
+.contenedor_categorias {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.contenedor_categorias a {
+    border: solid 1px #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.contenedor_categorias a:hover {
+    background-color: #3483fa;
+}
+
+.contenedor_categorias a i {
+    font-size: 50px;
+    color: #3483fa;
+}
+
+.contenedor_categorias a h3 {
+    color: #666666;
+    padding: 15px 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.contenedor_categorias a:hover i, .contenedor_categorias a:hover h3{
+    color: white;
+}
+
+/*FOOTER*/
+
+footer {
+    margin: 20px 0;
+    padding: 0 50px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.aclaraciones {
+    width: 250px;
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.aclaraciones i {
+    font-size: 30px;
+    color: #3483fa;
+    padding-bottom: 10px;
+}
+
+.aclaraciones h3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.aclaraciones p {
+    color: #666666;
+    font-size: 12px;
+}
+
+.links_footer {
+    padding: 0 0 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+}
+
+.links_footer li a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.links_footer li a:hover {
+    opacity: 1;
+}
+
+.derechos {
+    color: #666;
+    font-size: 12px;  
+}

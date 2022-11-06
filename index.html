@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo-mercado-liebre.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <title>MercadoLiebre</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="headerSuperior">
             <a href="index.html"><img src="img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></a>
-            <form action="" method="">
+            <form action="" method="" class="barraBusqueda">
                 <input type="text" name="busqueda" placeholder="Buscar productos, marcas y más...">
                 <button type="submit"><i class="fas fa-search"></i></button>
-                <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
             </form>
+            <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>  
         </div>
-        <div>
-            <button><a href="#"><i class="fas fa-map-marker-alt"></i> Enviar a</a></button>
-            <nav>
-                <ul>
-                    <li><a href="#">Categorías<i class="fas fa-chevron-down"></i></a></li>
-                        <ul>
+        <div class="headerInferior">
+            <button class="envios"><i class="fas fa-map-marker-alt"></i><a href="#"> Enviar a</a></button>
+            <nav class="menu">
+                <ul class="menu_izquierda">
+                    <li class="categorias"><a href="#">Categorías <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
                             <li><a href="#">Vehículos</a></li>
                             <li><a href="#">Tecnología</a></li>
                             <li><a href="#">Hogar y Muebles</a></li>
@@ -32,13 +34,14 @@
                             <li><a href="#">Vehículos</a></li>
                             <li><a href="#">Servicios</a></li>
                         </ul>
+                    </li>
                     <li><a href="#ofertas">Ofertas</a></li>
                     <li><a href="#">Tiendas</a></li>
                     <li><a href="pages/login.html">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
             </nav>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li><a href="pages/terminos.html">Creá tu cuenta</a></li>
                     <li><a href="pages/login.html">Ingresá</a></li>
@@ -49,32 +52,32 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="banner">
             <img src="img/img-home-banner.jpg" alt="imagen del point de MercadoLiebre">
         </section>
-        <div>
-            <article>
+        <div class="mediosPago">
+            <article class="medio">
                 <a href="#"><i class="fas fa-credit-card"></i></a>
                 <div>
                     <h3>Tarjeta de crédito</h3>
                     <a href="#">Ver promociones bancarias</a>
                 </div>
             </article>
-            <article>
+            <article class="medio">
                 <a href="#"><i class="fas fa-address-card"></i></a>
                 <div>
                     <h3>Tarjeta de débito</h3>
                     <a href="#">Ver más</a>
                 </div>
             </article>
-            <article>
+            <article class="medio">
                 <a href="#"><i class="fas fa-hand-holding-usd"></i></a>
                 <div>
                     <h3>Cuotas sin tarjeta</h3>
                     <a href="#">Conoce Mercado Crédito</a>
                 </div>
             </article>
-            <article>
+            <article class="medio">
                 <a href="#"><i class="fas fa-money-bill-wave"></i></a>
                 <div>
                     <h3>Efectivo</h3>
@@ -82,71 +85,73 @@
                 </div>
             </article>
         </div>
-        <section id="ofertas">
-            <h1>Ofertas</h1>
-            <div>
+        <section class="ofertas" id="ofertas">
+            <h1 class="titulo">Ofertas</h1>
+            <div class="articulos">
                 <article>
                     <img src="img/img-cafetera-moulinex.jpg" alt="Imagen de la cafetera Moulinex">
-                    <div>
-                        <p>$6.770</p>
-                        <p>40% OFF</p>
-                        <p>Envío gratis</p>
-                        <h3>Cafetera Moulinex</h3>
+                    <div class="contenidoArticulo">
+                        <p class="precio">$6.770</p>
+                        <p class="verde">40% OFF</p>
+                        <p class="verde envio">Envío gratis</p>
+                        <h3 class="descripcion">Cafetera Moulinex</h3>
                     </div>
                 </article>
                 <article>
                     <img src="img/img-macbook-pro-2019.jpg" alt="Imagen de la macBook Pro 2019">
-                    <div>
-                        <p>$230.000</p>
-                        <p>20% OFF</p>
-                        <p>Envío gratis</p>
-                        <h3>MacBook Pro 2019</h3>
+                    <div class="contenidoArticulo">
+                        <p class="precio">$230.000</p>
+                        <p class="verde">20% OFF</p>
+                        <p class="verde envio">Envío gratis</p>
+                        <h3 class="descripcion">MacBook Pro 2019</h3>
                     </div>
                 </article>
                 <article>
                     <img src="img/img-samsung-galaxy-s10.jpg" alt="Imagen del Samsung Galaxy S10">
-                    <div>
-                        <p>$70.500</p>
-                        <p>10% OFF</p>
-                        <p>Envío gratis</p>
-                        <h3>Samsung Galaxy S10</h3>
+                    <div class="contenidoArticulo">
+                        <p class="precio">$70.500</p>
+                        <p class="verde">10% OFF</p>
+                        <p class="verde envio">Envío gratis</p>
+                        <h3 class="descripcion">Samsung Galaxy S10</h3>
                     </div>
                 </article>
                 <article>
                     <img src="img/img-tv-samsung-smart.jpg" alt="Imagen del SmartTv Samsung 43'' ">
-                    <div>
-                        <p>$23.200</p>
-                        <p>5% OFF</p>
-                        <p>Envío gratis</p>
-                        <h3>SmartTV Samsung 43''</h3>
+                    <div class="contenidoArticulo">
+                        <p class="precio">$23.200</p>
+                        <p class="verde">5% OFF</p>
+                        <p class="verde envio">Envío gratis</p>
+                        <h3 class="descripcion">SmartTV Samsung 43''</h3>
                     </div>
                 </article>
             </div>
         </section>
-        <section>
-            <h2>Descubrí</h2>
-            <div>
-                <div>
-                    <p>Cambiá la Batería</p>
-                    <h3>HASTA 20% OFF</h3>
-                    <h3>Y 12 CUOTAS SIN INTERÉS</h3>
-                    <button>Ver más</button>
+        <section class="descubrir">
+            <h2 class="titulo">Descubrí</h2>
+            <div class="contenedor_elementos">
+                <div class="elemento">
+                    <div>
+                        <p>Cambiá la Batería</p>
+                        <h3>HASTA 20% OFF</h3>
+                        <h3>Y 12 CUOTAS SIN INTERÉS</h3>
+                        <button>Ver más</button>
+                    </div>
+                    <img src="img/img-bateria.jpg" alt="Imagen de una Batería para Autos">
                 </div>
-                <img src="img/img-bateria.jpg" alt="Imagen de una Batería para Autos">
-            </div>
-            <div>
-                <div>
-                    <p>Entrá en modo Relax</p>
-                    <h3>HASTA 30% OFF</h3>
-                    <h3>Y 6 CUOTAS SIN INTERÉS</h3>
-                    <button>Ver más</button>
+                <div class="elemento">
+                    <div>
+                        <p>Entrá en modo Relax</p>
+                        <h3>HASTA 30% OFF</h3>
+                        <h3>Y 6 CUOTAS SIN INTERÉS</h3>
+                        <button>Ver más</button>
+                    </div>
+                    <img src="img/img-sombrilla.jpg" alt="Imagen de una Batería para Autos">
                 </div>
-                <img src="img/img-sombrilla.jpg" alt="Imagen de una Batería para Autos">
             </div>
         </section>
-        <section>
-            <h2>Categorías populares</h2>
-            <div>
+        <section class="categorias">
+            <h2 class="titulo">Categorías populares</h2>
+            <div class="contenedor_categorias">
                 <a href="#">
                     <i class="fas fa-futbol"></i>
                     <h3>Deportes</h3>
@@ -176,32 +181,30 @@
     </main>
     <footer>
         <div>
-            <article>
+            <article class="aclaraciones">
                 <i class="fas fa-credit-card"></i>
                 <h3>Pagá con tarjeta o en efectivo</h3>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
             </article>
-            <article>
+            <article class="aclaraciones">
                 <i class="fas fa-gift"></i>
                 <h3>Envio gratis desde $4.000</h3>
                 <p>Solo por estar registrd@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
             </article>
-            <article>
+            <article class="aclaraciones">
                 <i class="fas fa-user-shield"></i>
                 <h3>Seguridad, de principio a fin</h3>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque siempre estás protegid@.</p>
             </article>
         </div>
-        <div>
-            <ul>
-                <li><a href="#">Trabaja con nosotros</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
-                <li><a href="#">Defensa del consumidor</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-        </div>
-        <p>Copyright © 1999-2022 MercadoLibre S.R.L.</p>
-        <p>CABA, Argentina</p>
+        <ul class="links_footer">
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Defensa del consumidor</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <p class="derechos">Copyright © 1999-2022 MercadoLibre S.R.L.</p>
+        <p class="derechos">CABA, Argentina</p>
     </footer>
 </body>
 </html>

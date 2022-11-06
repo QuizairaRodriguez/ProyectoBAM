@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+header {
+    background-color: rgb(255, 241, 89);
+}
+
+.headerSuperior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 50px;
+}
+
+.headerSuperior a {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.headerSuperior .ayuda i{
+    font-size: 20px;
+    color: black;
+}
+
+/*MAIN*/
+main {
+    background-color: #eeeaee;
+    padding: 50px;
+}
+
+/*CONTENDOR REGISTRO*/
+.contenedor_registro {
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.contenedor_registro i {
+    font-size: 50px;
+    color: #3483fa;
+}
+
+.contenedor_registro h3 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.contenedor_registro form {
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor_registro form input {
+    width: 330px;
+    height: 50px;
+    border: 3px solid #3483fa;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    outline: none;
+    padding: 10px;
+}
+
+.contenedor_registro form .radio_button {
+    width: 20px;
+    height: 15px;
+}
+
+.contenedor_registro form .checkbox {
+    width: 20px;
+    height: 15px;
+}
+
+.contenedor_registro form .opciones {
+    color: black;
+    font-size: 12px;
+}
+
+.contenedor_registro form label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666666;
+}
+
+.contenedor_registro form div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor_registro form button {
+    margin: 10px 0;
+    width: 150px;
+    border: none;
+    height: 40px;
+    background-color: #3483fa;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+/*FOOTER*/
+
+footer {
+    margin: 5px 0 10px 0;
+    padding: 0 50px;
+}
+
+.links_footer {
+    padding: 0 0 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+}
+
+.links_footer li a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.links_footer li a:hover {
+    opacity: 1;
+}
+
+.derechos {
+    color: #666;
+    font-size: 12px;  
+}

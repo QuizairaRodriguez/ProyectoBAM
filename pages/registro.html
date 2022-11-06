@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo-mercado-liebre.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/registro.css">
     <title>MercadoLiebre - Tus datos</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="headerSuperior">
             <a href="../index.html"><img src="../img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></a>
-            <a href="#"><i class="fas fa-question-circle"></i></a>
+            <a  class="ayuda" href="#"><i class="fas fa-question-circle"></i></a>
         </div>
     </header>
     <main>
-        <div>
+        <div class="contenedor_registro">
             <i class="fas fa-id-badge"></i>
             <h3> Para crear tu cuenta necesitamos tus datos</h3>
             <form class="formulario-registro" action="/" method="GET">   
@@ -49,11 +50,11 @@
                     <label>Perfil del usuari@:
                         <br>
                         <label class="opciones">
-                            <input type="radio" name="perfil" value="Comprar">
+                            <input class="radio_button" type="radio" name="perfil" value="Comprar">
                             Comprar 
                         </label>
                         <label class="opciones">
-                            <input type="radio" name="perfil" value="Vender">
+                            <input class="radio_button" type="radio" name="perfil" value="Vender">
                             Vender
                         </label>
                     </label>
@@ -63,23 +64,23 @@
                         Intereses:
                         <br>
                         <label class="opciones">
-                        <input type="checkbox" name="intereses" value="Electrodomesticos">
+                        <input class="checkbox" type="checkbox" name="intereses" value="Electrodomesticos">
                             Electrodomésticos
                         </label>
                         <label class="opciones">
-                            <input type="checkbox" name="intereses" value="Moda">
+                            <input class="checkbox" type="checkbox" name="intereses" value="Moda">
                             Moda
                         </label>
                         <label class="opciones">
-                            <input type="checkbox" name="intereses" value="Hogar y Muebles">
+                            <input class="checkbox" type="checkbox" name="intereses" value="Hogar y Muebles">
                             Hogar y Muebles
                         </label>
                         <label class="opciones">
-                            <input type="checkbox" name="intereses" value="Tecnología">
+                            <input class="checkbox" type="checkbox" name="intereses" value="Tecnología">
                             Tecnología
                         </label class="opciones">
                         <label class="opciones">
-                            <input type="checkbox" name="intereses" value="Belleza y Cuidado Personal">
+                            <input class="checkbox" type="checkbox" name="intereses" value="Belleza y Cuidado Personal">
                             Belleza y Cuidado Personal
                         </label>
                     </label>
@@ -97,7 +98,7 @@
                 <p>
                     <label for="confirmacionContraseña">Confirmar contraseña:</label>
                     <br>
-                    <input type="password" name="password" for="confirmacionContraseña" placeholder="Confirmar contraseña"minlength="8" required>
+                    <input type="password" name="password" for="confirmacionContraseña" placeholder="Confirmar contraseña" minlength="8" required>
                 </p> 
                 <div>
                     <button type="submit">Enviar</button>
@@ -107,8 +108,14 @@
         </div>  
     </main>
     <footer>
-        <p>Copyright © 1999-2022 MercadoLibre S.R.L.</p>
-        <p>CABA, Argentina</p>
+        <ul class="links_footer">
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Defensa del consumidor</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <p class="derechos">Copyright © 1999-2022 MercadoLibre S.R.L.</p>
+        <p class="derechos">CABA, Argentina</p>
     </footer>  
 </body>
 </html>

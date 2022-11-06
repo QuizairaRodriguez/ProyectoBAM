@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo-mercado-liebre.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/carrito.css">
     <title>MercadoLiebre - Agregar al carrito</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="headerSuperior">
             <a href="../index.html"><img src="../img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></a>
-            <a href="#"><i class="fas fa-question-circle"></i></a>
+            <a  class="ayuda" href="#"><i class="fas fa-question-circle"></i></a>
         </div>
     </header>
     <main>
-        <div>
+        <div class="contenedor">
             <img src="../img/img-register.png" alt="Imagen de un formulario">
             <h2>¡Hola! Para agregar al carrito, ingresá a tu cuenta</h2>
             <button><a href="terminos.html">Crear cuenta</a></button>
-            <button><a href="login.html">Ingresar</a></button>
+            <button class="boton_blanco"><a href="login.html">Ingresar</a></button>
         </div>
+    </main>
     <footer>
-        <p>Copyright © 1999-2022 MercadoLibre S.R.L.</p>
-        <p>CABA, Argentina</p>
+        <ul class="links_footer">
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Defensa del consumidor</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <p class="derechos">Copyright © 1999-2022 MercadoLibre S.R.L.</p>
+        <p class="derechos">CABA, Argentina</p>
     </footer>    
 </body>
 </html>

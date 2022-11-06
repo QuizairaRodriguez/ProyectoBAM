@@ -6,38 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo-mercado-liebre.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/login.css">
     <title>MercadoLiebre - Ingresá</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="headerSuperior">
             <a href="../index.html"><img src="../img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></a>
-            <a href="#"><i class="fas fa-question-circle"></i></a>
+            <a  class="ayuda" href="#"><i class="fas fa-question-circle"></i></a>
         </div>
     </header>
     <main>
-        <div>
+        <div class="contenedor_ingresar">
             <h2>Ingresá tu usuari@ de Mercado Liebre</h2>
-            <div>
-                <form action="../index.html" method="">
-                    <p>
-                        <label for="nombre">Nombre de usuari@</label>
-                        <br>
-                        <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuari@" required>
-                    </p>
-                    <p>
-                        <label for="contraseña">Contraseña</label>
-                        <br>
-                        <input type="password" name="password" id="contraseña"placeholder="Contraseña" minlength="8" required>
-                    </p>
+            <form action="../index.html" method="">
+                <p>
+                    <label for="nombre">Nombre de usuari@</label>
+                    <br>
+                    <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuari@" required>
+                </p>
+                <p>
+                    <label for="contraseña">Contraseña</label>
+                    <br>
+                    <input type="password" name="password" id="contraseña"placeholder="Contraseña" minlength="8" required>
+                </p>
+                <div>
                     <button type="submit">Continuar</button>
-                    <button><a href="terminos.html">Crear cuenta</a></button>
-                </form>
-            </div>
+                    <button class="boton_blanco"><a href="terminos.html">Crear cuenta</a></button>
+                </div>
+                
+            </form>
         </div>
+    </main>
     <footer>
-        <p>Copyright © 1999-2022 MercadoLibre S.R.L.</p>
-        <p>CABA, Argentina</p>
-    </footer>    
+        <ul class="links_footer">
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Defensa del consumidor</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <p class="derechos">Copyright © 1999-2022 MercadoLibre S.R.L.</p>
+        <p class="derechos">CABA, Argentina</p>
+    </footer>     
 </body>
 </html>
